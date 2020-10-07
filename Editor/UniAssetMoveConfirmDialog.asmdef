@@ -1,0 +1,17 @@
+{
+    "name": "UniAssetMoveConfirmDialog",
+    "references": [
+        "GUID:7b6be2b92e29eb34182d6da0ff1d6add"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
