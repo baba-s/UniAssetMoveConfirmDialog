@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using UnityEditor;
 
 namespace Kogane.Internal
@@ -17,6 +18,11 @@ namespace Kogane.Internal
 
 			if ( !settings.Enabled ) return AssetMoveResult.DidNotMove;
 			if ( m_isAllMove ) return AssetMoveResult.DidNotMove;
+
+			var sourceDir      = Path.GetDirectoryName( sourcePath );
+			var destinationDir = Path.GetDirectoryName( destinationPath );
+
+			if ( sourceDir == destinationDir ) return AssetMoveResult.DidNotMove;
 
 			var index = EditorUtility.DisplayDialogComplex
 			(
